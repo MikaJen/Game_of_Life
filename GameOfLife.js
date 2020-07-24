@@ -40,21 +40,30 @@ class GameOfLife {
   }
   getCell();
 
-  setCell(value, row, col) {
-    let board = this.board;
-    if (row >=0 && col >=0 && row< this.height && col < this.width){
-      board[row][col]= value;
-    }
+ // setCell(value, row, col) {
+   // let board = this.board;
+    //if (row >=0 && col >=0 && row< this.height && col < this.width){
+      //board[row][col]= value;
+   // }
 
 
-  }
+ // }
 
-  toggleCell(row,col) {
-    var liveCell= true
-    if
+  //toggleCell(row,col) {
+    liveCell= this.liveCell;
+      board.onClick = function(click) {
+      var target= click.target || target.scrElement;
+      while(target != this && (!target.tagName || target.tagName != "TD"))target = target.parentNode;
+      if(target != this) {
+
+        }
+        board.onClick()
+      }  
+    //var liveCell= true
+    //if
 
 
-  }
+  //}
 
   /**
    * Return the amount of living neighbors around a given coordinate.
@@ -62,7 +71,9 @@ class GameOfLife {
 
   livingNeighbors(row, col) {
     let count=0;
-    if(this.livingNeighbors= 1)
+    if(this.livingNeighbors= 1){
+      return tr
+    }
     
 
     // TODO: Return the count of living neighbors.
