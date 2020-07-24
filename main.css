@@ -1,5 +1,5 @@
 body {
-  font-family: Futura, Helvetica, Arial, sans-serif;
+  font-family: cursive
   color: #444;
 }
 
@@ -18,13 +18,13 @@ h1 {
 }
 
 #board td{
-  border: 1px solid #ddd;
+  border: 1px solid rgb(191, 18, 243);
   width: 18px;
   height: 18px;
 }
 
 td.alive {
-  background-color: #8CC8DD;
+  background-color: #f019c1;
 }
 
 #control_panel {
@@ -42,7 +42,7 @@ td.alive {
 }
 
 .button:hover, .button:focus {
-  background-color: #258dad;
+  background-color: #1b26c5;
 }
 
 .button:focus {
